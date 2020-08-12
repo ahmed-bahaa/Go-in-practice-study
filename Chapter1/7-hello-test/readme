@@ -1,0 +1,11 @@
+
+
+// to run test case 
+$ go test
+
+// to see code coverage 
+$ go test -cover 
+
+// to see the code coverage on browser
+$ go test -coverprofile=coverage.out
+$ go tool cover -html=coverage.out
