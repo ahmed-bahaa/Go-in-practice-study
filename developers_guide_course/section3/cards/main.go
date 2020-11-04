@@ -8,7 +8,7 @@ func main() {
 	card = newCard()
 
 	fmt.Println(card)
-	fmt.Println(newCard2())
+	fmt.Println(newCard2()) // note to work you need to run both of files $ go run main.go newcCard2.go
 }
 
 func newCard() string {
