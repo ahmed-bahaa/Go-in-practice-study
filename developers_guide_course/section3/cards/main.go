@@ -2,8 +2,9 @@ package main
 
 func main() {
 	// var card string = "Ace of spades"
-	// cards := newDeck()
-	cards := newDeckFromFile("deck_myfile.txt")
+	cards := newDeck()
+	// cards := newDeckFromFile("deck_myfile.txt")
+	cards.shuffle()
 	cards.print()
 
 	// fmt.Println(cards.toString())
