@@ -22,7 +22,17 @@ func main() {
 			zipCode: 555,
 		},
 	}
-	fmt.Println("%+v", alex)
+
+	alex.updateFirstName("btata")
+	alex.print()
+}
+
+func (p person) updateFirstName(name string) {
+	p.firstName = name
+}
+
+func (p person) print() {
+	fmt.Printf("%+v", p)
 }
 
 // func main() {
