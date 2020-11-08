@@ -23,8 +23,14 @@ func main() {
 		},
 	}
 
-	alexPointer := &alex
-	alexPointer.updateFirstName("btata")
+	// first approach
+	// alexPointer := &alex
+	// alexPointer.updateFirstName("btata")
+
+	// second approach "shorter" for call by reference
+	// in this method go will understand automatically to recieve the address for this value
+	alex.updateFirstName("btata")
+
 	alex.print()
 }
 
